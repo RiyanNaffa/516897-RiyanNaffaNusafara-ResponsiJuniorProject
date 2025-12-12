@@ -12,10 +12,10 @@ namespace GajianKuy.Database
     {
         private readonly string connectionString;
 
-        public DatabaseManager(string connectionString)
+        public DatabaseManager(string constr)
         {
-            if(string.IsNullOrWhiteSpace(connectionString)) throw new ArgumentNullException("Connection string cannot be null or empty", nameof(connectionString));
-            connectionString = connectionString.Trim();
+            // if(string.IsNullOrWhiteSpace(connectionString)) throw new ArgumentNullException("Connection string cannot be null or empty", nameof(constr));
+            connectionString = constr;
         }
         public (DataTable dt, string error) ExecuteQuery(string query, params NpgsqlParameter[] parameters)
         {
@@ -46,7 +46,7 @@ namespace GajianKuy.Database
 
         public void ExecuteNonQuery(string query, params NpgsqlParameter[] parameters)
         {
-            if (string.IsNullOrWhiteSpace(query)) throw new ArgumentException("Query cannot be null or empty.", nameof(query);
+            if (string.IsNullOrWhiteSpace(query)) throw new ArgumentException("Query cannot be null or empty.", nameof(query));
             try
             {
                 using (var conn = new NpgsqlConnection(connectionString))

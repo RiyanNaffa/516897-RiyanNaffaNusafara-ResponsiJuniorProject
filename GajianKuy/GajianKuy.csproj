@@ -24,8 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Database\" />
-    <Folder Include="Services\" />
+    <PackageReference Include="Npgsql" Version="7.0.7" />
   </ItemGroup>
 
 </Project>

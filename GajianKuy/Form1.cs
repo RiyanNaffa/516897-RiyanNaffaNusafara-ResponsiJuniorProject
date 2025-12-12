@@ -8,7 +8,7 @@ namespace GajianKuy
     {
         private readonly DeveloperService ds;
         private readonly ProyekService ps;
-        private const string CONNECTION_STRING = "Host=localhost;Port=5432;Username=riyan;Passwordd=???;Database=gajiankuy-responsi";
+        private const string CONNECTION_STRING = "Host=localhost;Port=5432;Username=postgres;Password=informatika;Database=gajiankuy-responsi";
         public Form1()
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace GajianKuy
             {
                 try
                 {
-                    if (e.RowIndex > -0 && e.RowIndex < dgPerforma.Rows.Count)){
+                    if (e.RowIndex > -0 && e.RowIndex < dgPerforma.Rows.Count){
                         var row = dgPerforma.Rows[e.RowIndex];
                         if (row.Cells["nama"].Value != null)
                         {
@@ -107,6 +107,7 @@ namespace GajianKuy
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
+            /*
             string nama = tbNama.Text.Trim();
             int proyekId = cbPilihProyek.SelectedIndex >= 0 ? (int)Convert.ToInt32(cbPilihProyek.SelectedValue) : 1;
 
@@ -115,6 +116,7 @@ namespace GajianKuy
                 Nama = nama,
                 ProyekId = proyekId
             }
+            */
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
