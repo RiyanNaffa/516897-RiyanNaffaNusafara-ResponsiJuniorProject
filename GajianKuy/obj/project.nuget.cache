@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vjBnm5DuQ5FvZuvUA30dRAEVcniq5NATL0gUfGp9Ko3jFc+2HzL9bRPJEVdeoCUKy0ZzLJGu04mYxWfVqgMduw==",
+  "dgSpecHash": "HzSBUuhQHuMjP+6B5RmJFXTXTZpbE32l3vArZW7dz7dX5gLpni06PwFjX9RKSmLTXLPzeKDUAOdLAh1W6y0zfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\RiyanNaffa\\Documents\\Responsi 2\\GajianKuy\\GajianKuy\\GajianKuy.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\RiyanNaffa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\RiyanNaffa\\.nuget\\packages\\npgsql\\7.0.7\\npgsql.7.0.7.nupkg.sha512"
+  ],
   "logs": []
 }
